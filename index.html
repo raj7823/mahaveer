@@ -3,25 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ultra Pro Landing</title>
+<title>Premium Share Market</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 
 <script>
-// fake live users
-setInterval(()=>{
-  document.getElementById("live").innerText = Math.floor(Math.random()*50)+120;
-},3000);
-
-// redirect
-function go(){
-}
-
-// popup
 function showPopup(){
   document.getElementById("popup").style.display="flex";
 }
+
 setTimeout(showPopup,4000);
 </script>
 
@@ -32,27 +23,31 @@ setTimeout(showPopup,4000);
 
 <div class="card">
 
-<div class="live">🔥 <span id="live">150</span> People Watching</div>
+<div class="live">📈 Premium Stock Market Updates</div>
 
 <img src="images/profile.jpg" class="profile">
 
-<h2>💎 ALL MATKA GAMES 💎</h2>
+<h2>💎 SHARE MARKET PREMIUM 💎</h2>
 
-<a onclick="go()" class="btn pulse">🚀 JOIN TELEGRAM</a>
+<p class="subtitle">
+Get Daily Stock Market Updates, Market Analysis & Trading Insights
+</p>
+
+<a href="https://t.me/+7XdzZjfP-_kyYWU9"
+   class="btn pulse">
+   🚀 JOIN TELEGRAM
+</a>
 
 <div class="list">
-<div>✔ KALYAN</div>
-<div>✔ MAIN RATAN</div>
-<div>✔ TIME BAZAR</div>
-<div>✔ RAJDHANI DAY/NIGHT</div>
-<div>✔ MILAN DAY/NIGHT</div>
+<div>✔ NIFTY 50 ANALYSIS</div>
+<div>✔ BANK NIFTY UPDATES</div>
+<div>✔ STOCK MARKET INSIGHTS</div>
+<div>✔ INTRADAY MARKET UPDATES</div>
+<div>✔ DAILY MARKET LEVELS</div>
 </div>
 
-<div class="timer">⏳ Offer Ends In: <span id="count">60</span>s</div>
-
-<a onclick="go()" class="btn pulse">🔥 JOIN NOW</a>
-
-<div class="bottom">
+<div class="timer">
+⏳ Join Now For Free Market Updates
 </div>
 
 </div>
@@ -61,19 +56,14 @@ setTimeout(showPopup,4000);
 
 <div id="popup" class="popup">
 <div class="popup-box">
-🔥 20 People Joined Just Now!
+📈 Get Premium Market Updates
 <br><br>
-<button onclick="go()">JOIN NOW</button>
+<a href="https://t.me/+7XdzZjfP-_kyYWU9"
+   class="popup-btn">
+   JOIN TELEGRAM
+</a>
 </div>
 </div>
-
-<script>
-// countdown
-let c=60;
-setInterval(()=>{
-  if(c>0){c--; document.getElementById("count").innerText=c;}
-},1000);
-</script>
 
 </body>
 </html>
